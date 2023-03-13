@@ -1,6 +1,6 @@
 class LinkedList {
   constructor(head) {
-    this.head = head
+    this.head = head;
   }
 
   addItem(elem) {
@@ -25,7 +25,7 @@ class LinkedList {
 
     while (current.next) {
       size += 1;
-      current = current.next
+      current = current.next;
     }
 
     return size;
@@ -39,7 +39,7 @@ class LinkedList {
       if (i === index - 1) {
         current.next = current.next.next;
       } else {
-        current = current.next
+        current = current.next;
       }
 
       i++
@@ -54,20 +54,20 @@ class LinkedList {
       if (i === index - 1) {
         current.next.value = newElem;
       } else {
-        current = current.next
+        current = current.next;
       }
 
-      i++
+      i++;
     }
   }
 }
 
 let myList = new LinkedList();
-myList.addItem({ value: '', next: null })
-myList.addItem({ value: 1, next: null })
-myList.addItem({ value: false, next: null })
-myList.removeElemAt(2)  //false
-myList.updateElemAt(0, 1) //'' = 1
-myList.size() // 2 
+myList.addItem({ value: '', next: null });
+myList.addItem({ value: 1, next: null });
+myList.addItem({ value: false, next: null });
+myList.removeElemAt(2);  //false
+myList.updateElemAt(0, 1); //'' = 1
+myList.size(); // 2 
 
 
