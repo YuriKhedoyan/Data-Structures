@@ -62,12 +62,12 @@ class LinkedList {
   }
 }
 
-let myList = new LinkedList();
-myList.addItem({ value: '', next: null });
-myList.addItem({ value: 1, next: null });
-myList.addItem({ value: false, next: null });
-myList.removeElemAt(2);  //false
-myList.updateElemAt(0, 1); //'' = 1
-myList.size(); // 2 
+// const myList = new LinkedList();
+// myList.addItem({ value: '', next: null });
+// myList.addItem({ value: 1, next: null });
+// myList.addItem({ value: false, next: null });
+// myList.removeElemAt(2);  false
+// myList.updateElemAt(0, 1); '' = 1
+// myList.size();  2 
 
 
